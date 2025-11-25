@@ -1,17 +1,42 @@
 package org.sakousa;
 
+import javax.swing.text.Style;
+import javax.swing.text.StyledDocument;
+import java.awt.*;
+import java.sql.SQLOutput;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    static void main() {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        IO.println(String.format("Hello and welcome!"));
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            IO.println("i = " + i);
-        }
+    public static void main(String[] args) {
+
+        //Type Casting
+        int a = 10;
+        //Widening casting
+        double b = a;
+        System.out.println("Hello a : " + a);
+        System.out.println("Hello b : " + b);
+
+        //Narrowing Casting
+        float c = 1.5f;
+        short d = (short) c;
+        System.out.println("Hello c : " + c);
+        System.out.println("Hello d : " + d);
+
+        //Primitive Data Types
+        int myNumber = 1234;
+        double myDouble = 1234.56789;
+        boolean myBoolean = true;
+
+        //Convert from int to String
+        System.out.println("Convert Integer into String: "+ Integer.toString(myNumber));
+        System.out.println("Convert Integer into String: " + String.valueOf(myNumber));
+
+        //Convert Integer to Double
+        System.out.println("Convert Integer into Double: " +(double)myNumber);
+        System.out.println("Convert Double into Integer " + (int)myDouble);
     }
+
 }
+
